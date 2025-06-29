@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Imagens do Firebase</title>
+</head>
+<body>
+    <a href="https://www.exoclick.com/signup/?login=premium2345345"><img src="https://www.exoclick.com/banners/728x90.gif" border="0"></a>
+
+    <ul id="lista-imagens">
+        <!-- As imagens vão aparecer aqui -->
+    </ul>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getStorage, ref, listAll, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBOkhbW5zTu6VL6hj0RzwOYPAxM3k0fn-Y",
+    authDomain: "sorteios-ca47c.firebaseapp.com",
+    databaseURL: "https://sorteios-ca47c-default-rtdb.firebaseio.com",
+    projectId: "sorteios-ca47c",
+    storageBucket: "sorteios-ca47c.appspot.com",
+    messagingSenderId: "27028769702",
+    appId: "1:27028769702:web:ba003062c1f78d74ba9d67",
+    measurementId: "G-6HD9W1P062"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const storage = getStorage(app);
+
+  const lista = document.getElementById('lista-imagens');
+  const pastaRef = ref(storage, 'fotos'); // Pasta onde estão as imagens
+
+  listAll(pastaRef)
+    .then((res) => {
+      res.items.forEach((itemRef) => {
+        getDownloadURL(itemRef).then((url) => {
+          const li = document.createElement('li');
+          li.className= "liimg"
+          li.innerHTML = `<img src="${url}" width="440"> <br\> <a href="https://www.exoclick.com/signup/?login=premium2345345"><img src="https://www.exoclick.com/banners/300x250.gif" border="0"></a>`;
+          lista.appendChild(li);
+        });
+      });
+    })
+    .catch((error) => {
+      console.error('Erro ao listar imagens:', error);
+    });
+
+</script>
+
+</body>
+</html>
