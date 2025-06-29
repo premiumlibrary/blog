@@ -6,10 +6,14 @@
     <title>Exibir Imagens do Firebase</title>
 </head>
 <body>
-    <a href="https://www.exoclick.com/signup/?login=premium2345345"><img src="https://www.exoclick.com/banners/728x90.gif" border="0"></a>
+   <iframe src="//a.magsrv.com/iframe.php?idzone=5659294&size=728x90" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        
+        
+        
 
     <ul id="lista-imagens">
         <!-- As imagens vão aparecer aqui -->
+         
     </ul>
 
 <script type="module">
@@ -39,7 +43,10 @@
         getDownloadURL(itemRef).then((url) => {
           const li = document.createElement('li');
           li.className= "liimg"
-          li.innerHTML = `<img src="${url}" width="440"> <br\> <a href="https://www.exoclick.com/signup/?login=premium2345345"><img src="https://www.exoclick.com/banners/300x250.gif" border="0"></a>`;
+          const img = document.createElement('img');
+          img.className= "imgurl"
+          img.src= url
+          li.appendChild(img)
           lista.appendChild(li);
         });
       });
