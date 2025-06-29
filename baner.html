@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Bloqueia qualquer rolagem */
+    background-color: rgb(235, 235, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgbaner {
+    width: 390px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+
+    </style>
+</head>
+<body>
+    <img src="#" alt="" id="imgbaner" class="imgbaner">
+    <!-- JuicyAds v3.0 -->
+<script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+<ins id="1095054" data-width="308" data-height="286"></ins>
+<script type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1095054});</script>
+<!--JuicyAds END-->
+
+
+
+
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getStorage, ref, listAll, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBOkhbW5zTu6VL6hj0RzwOYPAxM3k0fn-Y",
+    authDomain: "sorteios-ca47c.firebaseapp.com",
+    databaseURL: "https://sorteios-ca47c-default-rtdb.firebaseio.com",
+    projectId: "sorteios-ca47c",
+    storageBucket: "sorteios-ca47c.appspot.com",
+    messagingSenderId: "27028769702",
+    appId: "1:27028769702:web:ba003062c1f78d74ba9d67",
+    measurementId: "G-6HD9W1P062"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const storage = getStorage(app);
+
+  const lista = document.getElementById('lista-imagens');
+  const pastaRef = ref(storage, 'teste'); // Pasta onde estão as imagens
+
+  const imgBaner = document.getElementById("imgbaner");
+
+listAll(pastaRef).then((res) => {
+  res.items.forEach((itemRef) => {
+    getDownloadURL(itemRef).then((url) => {
+      imgBaner.src = url;
+      // Se quiser só a primeira imagem, pode usar return aqui para sair do loop:
+      return;
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>
