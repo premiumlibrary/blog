@@ -10,9 +10,10 @@
 header{
     background-color: var(--corbase);
     color: var(--branco);
-    height: 90px;
+    height: 70px;
     text-align: center;
     padding-bottom: 10px;
+    
 
 }
 
@@ -28,6 +29,7 @@ header{
 }
 .ads{
     margin-bottom: 20px;
+    text-align: center;
 }
 .img{
     display: flex;
@@ -53,4 +55,5 @@ footer{
   bottom: 0;
   background-color: #f0f0f0; /* Exemplo de cor */
   padding: 20px;
+  text-align: center;
 }
