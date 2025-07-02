@@ -1,0 +1,56 @@
+:root{
+    --branco:#ffffff;
+     --corbase:#FD2C2C;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: var(--corbase);
+    color: var(--branco);
+    height: 90px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.sl{
+    text-align: center;
+
+}
+.linha{
+    background-color: var(--corbase);
+    height: 3px;
+    margin-bottom: 10px;
+    box-shadow: -2px 2px 2px 0px #00000036;
+}
+.ads{
+    margin-bottom: 20px;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.imgurl{
+    width: 315px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+}
+
+footer{
+   position: sticky;
+  bottom: 0;
+  background-color: #f0f0f0; /* Exemplo de cor */
+  padding: 20px;
+}

@@ -1,6 +1,6 @@
 :root{
-    --branco:#fffffff;
-     --corbase:#1C9CEF
+    --branco:#ffffff;
+     --corbase:#FD2C2C;
 }
 
 * {
@@ -22,27 +22,16 @@ body {
 
 
 nav{
-    height: 160px;
-     background: linear-gradient(90deg, #FF5F6D, #FFC371);
-    color: white;
+    background-color: var(--corbase);
+    width: 100%;
+    height: 91px;
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
     
 }
 
-.banner{
-    width: 100%;
-    height: 100px;
-}
-.banner img {
-    max-width: 100%;
-
-    display: block;
-}
 
 h1{
-    color: black;
+    color: var(--branco);
     margin-top: 10px;
 }
 
