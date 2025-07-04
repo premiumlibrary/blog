@@ -2,15 +2,14 @@
   import { getStorage, ref, listAll, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-storage.js";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyBOkhbW5zTu6VL6hj0RzwOYPAxM3k0fn-Y",
-    authDomain: "sorteios-ca47c.firebaseapp.com",
-    databaseURL: "https://sorteios-ca47c-default-rtdb.firebaseio.com",
-    projectId: "sorteios-ca47c",
-    storageBucket: "sorteios-ca47c.appspot.com",
-    messagingSenderId: "27028769702",
-    appId: "1:27028769702:web:ba003062c1f78d74ba9d67",
-    measurementId: "G-6HD9W1P062"
-  };
+  apiKey: "AIzaSyD7gKNrLaahkuB3AIkNJqh6LxeNlyW061I",
+  authDomain: "reau-1ebe3.firebaseapp.com",
+  databaseURL: "https://reau-1ebe3-default-rtdb.firebaseio.com",
+  projectId: "reau-1ebe3",
+  storageBucket: "reau-1ebe3.appspot.com",
+  messagingSenderId: "134853510226",
+  appId: "1:134853510226:web:84ee2435ab22dc3f5b0b8b"
+};
 
   const app = initializeApp(firebaseConfig);
   const storage = getStorage(app);
@@ -41,4 +40,19 @@
   .catch((error) => {
     console.error('Erro ao listar imagens:', error);
   });
+
+
+
+
+  document.getElementById('confirmar').addEventListener('click', () => {
+    document.getElementById('popup-idade').style.display = 'none';
+  });
+
+  document.getElementById('sair').addEventListener('click', () => {
+    window.location.href = 'https://www.google.com/';
+  });
+
+
+
+
 
