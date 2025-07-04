@@ -1,0 +1,54 @@
+ body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #imagem-detalhe {
+      max-width: 100%;
+      min-height: 400px;
+      height: auto;
+      margin-bottom: 20px;
+      padding: 5px;
+      border-radius: 10px;
+     
+
+    }
+    #descricao {
+      margin-bottom: 20px;
+      text-align: center;
+
+    }
+    .rs{
+      padding: 10px 20px;
+      background-color: #FD2C2C;
+      text-decoration: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      margin: 5px;
+    }
+    #patreon{
+        background-color: #000000;
+    }
+    #telegram{
+        background-color: #2086EA;
+    }
+
+
+    #compartilhar {
+      padding: 10px 20px;
+      background-color: #FD2C2C;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #compartilhar:hover {
+      background-color: #d62424;
+    }
+    #mensagem-copiado {
+      color: green;
+      margin-top: 10px;
+      display: none;
+    }

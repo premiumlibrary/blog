@@ -16,7 +16,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
   const storage = getStorage(app);
 
   const lista = document.getElementById('lista-imagens');
-  const pastaRef = ref(storage, 'fotos'); // Pasta onde estão as imagens
+  const pastaRef = ref(storage, 'plus'); // Pasta onde estão as imagens
 
   listAll(pastaRef)
   .then((res) => {
