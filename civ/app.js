@@ -41,6 +41,7 @@ onValue(dadosRef, (snapshot) => {
                             <img class="imglink" src="../img/link_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="ir">
                         </p>
                     </div>
+                    
                     <img class="imgurl" src="${item.img}" alt="${item.texto}">
                     </a>
 
