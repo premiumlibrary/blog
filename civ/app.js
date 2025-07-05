@@ -47,6 +47,8 @@ onValue(dadosRef, (snapshot) => {
 
                      <div class="likes">
                 <button class="btn-like" data-tipo="cora">❤️ <span class="count">${likes.cora}</span></button>
+
+                
                 <button class="btn-like" data-tipo="baba">😋 <span class="count">${likes.baba}</span></button>
             </div>
             
