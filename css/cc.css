@@ -1,0 +1,73 @@
+:root {
+    --branco: #f6fdfc;
+    --corbase: #89B0AE;
+    --cor2:#BEE3DB;
+    --cor3:#386641;
+}
+
+
+
+.fundoimg{
+    border: 0px solid rgb(255, 0, 0);
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.452);
+    position: relative;
+    display: inline-block;
+
+}
+.divp{
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.imgtxt{
+    color: black;
+    text-decoration: none;
+}
+
+.criador{
+    color: var(--cor3);
+}
+
+.imglink{
+    float: right;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px 0px 3px 3px;
+
+}
+
+.likes {
+    position: absolute;
+    bottom:8px;
+    left: 8px;
+    display: flex;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.274);
+    padding: 4px 6px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    align-items: center;
+}
+
+.btn-like {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-like:hover {
+    background: #f0f0f0;
+}
+
