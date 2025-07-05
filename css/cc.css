@@ -4,10 +4,40 @@
     --cor2:#BEE3DB;
     --cor3:#386641;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+    
+}
 
+body {
+    background-color: var(--branco);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--corbase);
+    color: var(--branco);
+    height: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .fundoimg{
+    width: 330px;
     border: 0px solid rgb(255, 0, 0);
     margin: 10px;
     border-radius: 5px;
