@@ -139,6 +139,14 @@ ul{
     gap: 4px;
 }
 
+footer {
+    position: sticky;
+    bottom: 0;
+    
+    padding: 20px;
+    text-align: center;
+}
+
 
 
 
