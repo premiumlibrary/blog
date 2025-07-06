@@ -2,6 +2,7 @@
     --branco: #f6fdfc;
     --corbase: #89B0AE;
     --cor2:#BEE3DB;
+    --cor3:#386641;
 }
 
 * {
@@ -83,13 +84,17 @@ ul {
     align-items: center;
 }
 
+
 .imgurl {
     width: 330px;
+    margin-bottom: 10px;
    /* border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);*/
     overflow: hidden;
     /*margin-bottom: 1.5rem;*/
     transition: transform 0.3s;
+    border-radius: 5px 5px 5px 5px;
+     box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.329);
 }
 
 footer {
